@@ -1,11 +1,10 @@
-
-
-// Include Required Libraries
+// Copyright by Alexander Bezprozvanny, 2025
+// Code based on the example from http://www.dronbotworkshop.com 
+// Removed BLE280 sensor, added SCD40 sensor
 #include <Wire.h>
 #include <Adafruit_FRAM_I2C.h>
 #include <Adafruit_EEPROM_I2C.h>
 #include <SensirionI2cScd4x.h>
-
 
 #define MONITOR_SPEED 115200
 #define NO_ERROR      0
@@ -188,4 +187,5 @@ void loop() {
 
   // Wait a short amount of time before the next reading.
   delay(2000);
+
 }
